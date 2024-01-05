@@ -1,0 +1,68 @@
+body {
+  background-color: #b2ccd6;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h2,
+a {
+  color: #133761;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 5px;
+}
+
+thead th,
+thead td {
+  font-weight: 600;
+}
+
+tr,
+td {
+  padding: 10px 20px;
+  text-align: right;
+  color: #8d9fb3;
+  border-bottom: 1px solid #a8bdc5;
+}
+
+th {
+  font-weight: 400;
+  text-align: left;
+}
+
+th p {
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  color: #133761;
+}
+
+.total {
+  padding: 20px;
+}
+
+button {
+  color: white;
+  background-color: #133761;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.sub {
+  display: flex;
+  justify-content: space-between;
+}
