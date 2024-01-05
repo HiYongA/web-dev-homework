@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+form {
+  width: 400px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.name-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.name-box input {
+  margin-top: 10px;
+  padding: 10px 25px;
+}
+
+#message {
+  height: 100px;
+}
+
+.submit-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-box button {
+  padding: 8px 40px;
+  background: #ffbf34;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
