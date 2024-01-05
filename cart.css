@@ -12,9 +12,13 @@ body {
   gap: 20px;
 }
 
-h2,
+h2 a {
+  text-decoration: none;
+}
+
 a {
   color: #133761;
+  cursor: pointer;
 }
 
 table {
@@ -54,15 +58,29 @@ strong {
   padding: 20px;
 }
 
+.sub {
+  display: flex;
+  justify-content: space-between;
+}
+
 button {
   color: white;
   background-color: #133761;
   padding: 20px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
-.sub {
-  display: flex;
-  justify-content: space-between;
+/* hfa 순서 중요 */
+button:hover {
+  background-color: chocolate;
+}
+
+button:focus {
+  background-color: grey;
+}
+
+button:active {
+  background-color: brown;
 }
