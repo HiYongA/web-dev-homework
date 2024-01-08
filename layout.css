@@ -23,6 +23,59 @@
   color: white;
 }
 
+.shop-bg {
+  background-color: #eee;
+  padding: 20px;
+}
+
+.shop-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+/* one-way 애니메이션 만드는 step */
+/* 1. 시작스타일 만들기 */
+/* 2. 최종스타일 만들기 */
+/* 3. 언제 최종스타일로 변하는지 */
+/* 4. transition으로 애니메이션 */
+
+.overlay-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.overlay-wrap:hover .overlay-black {
+  margin-top: 50%;
+  text-align: center;
+}
+
+.overlay-black {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 100%;
+  /* 위에 있는 스타일이 변하면 1초동안 서서히 변경 */
+  transition: all 1s;
+}
+
+.overlay-black span {
+  color: white;
+  font-size: 30px;
+}
+
+.shop-item {
+  width: 33%;
+  padding: 10px;
+}
+
+.shop-item img {
+  width: 100%;
+  display: block;
+}
+
 /* 태블릿 */
 @media screen and (max-width: 1200px) {
   .container {
