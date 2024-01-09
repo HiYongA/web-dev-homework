@@ -1,0 +1,260 @@
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  background-color: #444445;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4e61c0;
+}
+
+h4,
+p {
+  margin: 0;
+}
+
+span {
+  font-size: 12px;
+}
+
+.page-bg {
+  /* linear-gradient([각도 또는 방향], color1, color2, ...); */
+  background: linear-gradient(to bottom, #3498db, #4e61c0);
+}
+
+.hero-section {
+  height: 100%;
+  max-height: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hero-content {
+  color: white;
+  margin-top: 30px;
+}
+
+.hero-content button {
+  margin-top: 10px;
+}
+
+.hero-content h3 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 12px;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 80px;
+}
+
+.hero-img img {
+  width: 300px;
+}
+
+.theme-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+}
+
+.theme-section h4 {
+  margin-top: 50px;
+}
+
+.theme-section p {
+  font-size: 13.5px;
+}
+
+.theme-section button {
+  margin-bottom: 70px;
+}
+
+.services-section {
+  color: white;
+}
+
+.services-header,
+.portfolio-header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 12px;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 25px;
+}
+
+.service-item i {
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  color: #4e61c0;
+}
+
+.service-item h4 {
+  margin-bottom: 5px;
+}
+
+.service-item p {
+  margin-bottom: 50px;
+}
+
+.portfolio-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.portfolio-items {
+  display: flex;
+  position: relative;
+}
+
+.portfolio-items img {
+  width: 50%;
+  border: 0px solid white;
+}
+
+/* 이미지에 마우스를 올릴 때의 스타일 */
+.portfolio-items img:hover {
+  border: 30px solid white;
+  overflow: hidden;
+}
+
+.overlay-left {
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 50px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.overlay-right {
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 650px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer {
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  background-color: #4e61c0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.social-icon i {
+  color: white;
+}
+
+/* 태블릿 */
+@media screen and (max-width: 1200px) {
+}
+
+/* 모바일 */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    height: 100%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-img {
+    margin-top: 30px;
+  }
+
+  .hero-img img {
+    width: 250px;
+  }
+
+  .overlay-left {
+    width: 40%;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: small;
+  }
+
+  .overlay-right {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 240px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: small;
+  }
+}
